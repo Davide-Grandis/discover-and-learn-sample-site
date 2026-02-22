@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduino &amp; Microcontrollers — Discover &amp; Learn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Discover &amp; Learn</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="page1.html">1</a>
+        <a href="page2.html">2</a>
+        <a href="page3.html">3</a>
+        <a href="page4.html">4</a>
+        <a href="page5.html">5</a>
+        <a href="page6.html">6</a>
+        <a href="page7.html">7</a>
+        <a href="page8.html" class="active">8</a>
+        <a href="page9.html">9</a>
+        <a href="page10.html">10</a>
+        <a href="page11.html">11</a>
+        <a href="page12.html">12</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero" style="background: linear-gradient(135deg, #0e7490, #0891b2);">
+      <h1>Arduino &amp; Microcontrollers</h1>
+      <p class="subtitle">Tiny computers that bring ideas to life — sensors, motors, LEDs, and endless possibilities.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>What Is a Microcontroller?</h2>
+      <p>A microcontroller is a small, self-contained computer on a single chip. It has a processor, memory, and input/output pins — everything needed to read sensors, control motors, blink LEDs, and communicate with other devices.</p>
+      <p>Unlike a full computer, microcontrollers are designed for dedicated tasks: measuring temperature, controlling a robot arm, or automating your home. They're cheap, low-power, and everywhere — from your washing machine to your car.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>Popular Microcontroller Boards</h2>
+      <table>
+        <thead>
+          <tr><th>Board</th><th>Chip</th><th>Clock Speed</th><th>Best For</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Arduino Uno</td><td>ATmega328P</td><td>16 MHz</td><td>Beginners, prototyping</td></tr>
+          <tr><td>Arduino Nano</td><td>ATmega328P</td><td>16 MHz</td><td>Compact projects, breadboards</td></tr>
+          <tr><td>Arduino Mega</td><td>ATmega2560</td><td>16 MHz</td><td>Complex projects, many I/O pins</td></tr>
+          <tr><td>ESP32</td><td>Xtensa LX6</td><td>240 MHz</td><td>Wi-Fi &amp; Bluetooth IoT projects</td></tr>
+          <tr><td>ESP8266</td><td>Tensilica L106</td><td>80 MHz</td><td>Low-cost Wi-Fi connectivity</td></tr>
+          <tr><td>Raspberry Pi Pico</td><td>RP2040</td><td>133 MHz</td><td>MicroPython, dual-core tasks</td></tr>
+          <tr><td>STM32 Blue Pill</td><td>STM32F103</td><td>72 MHz</td><td>Advanced embedded development</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-section">
+      <h2>The Arduino Ecosystem</h2>
+      <p>Arduino revolutionised electronics by making microcontrollers accessible to everyone. Founded in 2005 in Ivrea, Italy, the project combined affordable open-source hardware with a simple IDE and a C/C++ based language.</p>
+      <p>Key components of the Arduino ecosystem:</p>
+      <ul>
+        <li><strong>Arduino IDE</strong> — a free, cross-platform editor for writing and uploading code (called "sketches")</li>
+        <li><strong>Shields</strong> — stackable add-on boards for motor control, Ethernet, GPS, displays, and more</li>
+        <li><strong>Libraries</strong> — thousands of community-contributed libraries for sensors, protocols, and peripherals</li>
+        <li><strong>Community</strong> — one of the largest maker communities in the world, with forums, tutorials, and shared projects</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>Your First Sketch: Blink an LED</h2>
+      <p>The classic "Hello, World!" of microcontrollers — blinking the built-in LED on pin 13:</p>
+      <pre><code>void setup() {
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(13, HIGH);
+  delay(1000);
+  digitalWrite(13, LOW);
+  delay(1000);
+}</code></pre>
+      <p>Upload this sketch to your Arduino, and the onboard LED will blink on and off every second. From here, the possibilities are endless.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>Project Ideas</h2>
+      <ol>
+        <li><strong>Weather Station</strong> — use a DHT22 sensor to log temperature and humidity to an LCD display</li>
+        <li><strong>Line-Following Robot</strong> — infrared sensors guide a small car along a black line</li>
+        <li><strong>Smart Plant Watering</strong> — soil moisture sensor triggers a pump when your plants are thirsty</li>
+        <li><strong>MIDI Controller</strong> — potentiometers and buttons that send MIDI messages to music software</li>
+        <li><strong>Home Automation</strong> — ESP32 + relays to control lights and appliances over Wi-Fi</li>
+      </ol>
+      <blockquote>"The best way to predict the future is to invent it." — Alan Kay</blockquote>
+    </div>
+
+    <div class="page-nav">
+      <a href="page7.html">&larr; Programming Languages</a>
+      <a href="page9.html">Next: Renewable Energy &rarr;</a>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 Discover &amp; Learn. Built for GitHub Pages.</footer>
+</body>
+</html>
